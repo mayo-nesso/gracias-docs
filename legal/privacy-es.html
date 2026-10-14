@@ -15,36 +15,52 @@
 </head>
 <body>
   <h1>Política de Privacidad</h1>
-  <p><em>Última actualización: 23 de mayo de 2026</em></p>
+  <p><em>Última actualización: 14 de octubre de 2026</em></p>
 
-  <h2>1. Qué recopilamos y por qué</h2>
-  <p>Gracias recopila únicamente los datos necesarios para ofrecer la experiencia de diario de gratitud y el Círculo compartido:</p>
+  <p>Gracias está publicada por <strong>mayonesso</strong> (España), responsable de tus datos. Contacto: <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a>.</p>
+
+  <h2>1. Qué datos recogemos y para qué</h2>
   <ul>
-    <li><strong>Dirección de correo electrónico</strong> — para la autenticación por enlace mágico (a través de Supabase Auth).</li>
-    <li><strong>Apodo y color de avatar</strong> — visibles para ti y tus amigos del Círculo.</li>
-    <li><strong>Entradas de gratitud</strong> — hasta 3 elementos de texto por día, almacenados localmente y sincronizados opcionalmente con Supabase si has iniciado sesión.</li>
-    <li><strong>Relaciones de amistad</strong> — conexiones de seguidores y seguidos en tu Círculo.</li>
-    <li><strong>Likes</strong> — cuando le das like a la entrada de un amigo en el feed del Círculo.</li>
-    <li><strong>Token de notificación</strong> — utilizado únicamente para enviar tu recordatorio diario programado.</li>
+    <li><strong>Correo electrónico</strong> — para iniciar sesión con un enlace mágico. Lo guarda nuestro proveedor de autenticación (Supabase) y el correo de acceso se envía a través de Resend.</li>
+    <li><strong>Apodo y color de avatar</strong> — se muestran a ti y a los amigos de tu Círculo.</li>
+    <li><strong>Entradas de gratitud</strong> — hasta 3 frases cortas al día. Se guardan en tu dispositivo. Si inicias sesión, también se guardan en nuestros servidores (Supabase) para poder compartirlas con tus amigos.</li>
+    <li><strong>Amistades y "me gusta"</strong> — quién está en tu Círculo y qué entradas has marcado.</li>
+    <li><strong>Reportes</strong> — si reportas la entrada de un amigo, guardamos quién la reportó, qué entrada, el motivo y la fecha, solo para revisarla.</li>
   </ul>
-  <p><strong>No</strong> recopilamos datos de ubicación, historial de navegación, contactos, fotos ni ningún tipo de telemetría analítica. No se utilizan SDKs de publicidad.</p>
+  <p><strong>No</strong> recogemos tu ubicación, contactos ni fotos, y Gracias no incluye herramientas de analítica, publicidad ni seguimiento.</p>
 
-  <h2>2. Cómo lo almacenamos</h2>
-  <p>Las entradas de gratitud se almacenan localmente en tu dispositivo en SQLite. Si inicias sesión con correo electrónico, las entradas también se guardan de forma segura en <strong>Supabase</strong> (cifradas en reposo, infraestructura con certificación SOC 2). Tu correo electrónico y credenciales de autenticación son gestionados por Supabase Auth.</p>
+  <h2>2. Quién más trata tus datos</h2>
+  <p><strong>Supabase</strong> aloja nuestra base de datos y el inicio de sesión. <strong>Resend</strong> envía el correo de acceso, por lo que ve tu correo y el enlace de acceso. Nunca vendemos tus datos y no los compartimos con nadie más.</p>
 
-  <h2>3. Compartición</h2>
-  <p>Tu apodo, color de avatar y entradas de gratitud solo se comparten con los amigos que añades manualmente a tu Círculo. <strong>Nunca vendemos</strong> tus datos. Ningún tercero tiene acceso a tu información personal, excepto Supabase como proveedor de infraestructura de alojamiento.</p>
+  <h2>3. Qué ven tus amigos</h2>
+  <p>Tu apodo, color de avatar y entradas son visibles para los amigos que añades a tu Círculo. Las entradas se comparten por defecto y puedes hacer privada cualquier entrada para que solo tú la veas. Los amigos se añaden solo escaneando un código QR, así que ambas personas están de acuerdo. Cualquiera de los dos puede quitar al otro en cualquier momento, y después ya no veréis las entradas del otro.</p>
 
-  <h2>4. Datos de voz</h2>
-  <p>Gracias ofrece entrada de voz opcional a través de la API de Habla de iOS. El audio se transcribe en el dispositivo y se descarta de inmediato. <strong>Las grabaciones de voz nunca se transmiten ni almacenan</strong> en nuestros servidores ni en ningún otro lugar.</p>
+  <h2>4. Entrada por voz</h2>
+  <p>La entrada por voz es opcional. El reconocimiento de voz se hace <strong>en tu dispositivo</strong>: el audio no se envía a nosotros ni a ningún servidor, y no se guarda. Si tu dispositivo o idioma no admite el reconocimiento en el dispositivo, la voz simplemente no estará disponible y podrás escribir.</p>
 
-  <h2>5. Retención de datos</h2>
-  <p>Tus datos se conservan mientras tu cuenta exista. Cuando eliminas tu cuenta (ver sección 6), todos los datos personales se borran de Supabase en un plazo razonable. Los datos locales de SQLite en tu dispositivo se eliminan al borrar tu cuenta desde la app.</p>
+  <h2>5. Otras funciones del dispositivo</h2>
+  <ul>
+    <li><strong>Cámara</strong> — solo para escanear el código QR de un amigo. Las imágenes no se guardan ni se envían.</li>
+    <li><strong>Recordatorios</strong> — el recordatorio diario es una notificación programada en tu dispositivo. No guardamos ningún token de notificaciones push.</li>
+    <li><strong>Pausar otras apps</strong> (opcional) — las apps que eliges y el momento en que abres una se gestionan solo en tu dispositivo, con Tiempo de uso en iPhone y el servicio de Accesibilidad en Android. En Android, Gracias usa el servicio de Accesibilidad únicamente para detectar qué app está en primer plano. No lee lo que hay en tu pantalla, y nada sobre las apps que usas se guarda ni se envía a ningún sitio.</li>
+  </ul>
 
-  <h2>6. Tus derechos</h2>
-  <p>Puedes eliminar tu cuenta en cualquier momento desde la app: <strong>Ajustes → Eliminar cuenta</strong>. Esto elimina tu perfil, entradas, amistades y likes de nuestros servidores. Si tienes algún problema, escríbenos al correo que aparece a continuación.</p>
+  <h2>6. Reportes y moderación</h2>
+  <p>Puedes reportar la entrada de un amigo desde tu feed del Círculo. Revisamos los reportes manualmente y podemos eliminar contenido o cuentas que incumplan los <a href="terms-es">Términos</a>. Si se elimina cualquiera de las dos cuentas, los reportes relacionados se eliminan también.</p>
+
+  <h2>7. Conservación y eliminación de tus datos</h2>
+  <p>Conservamos tus datos mientras exista tu cuenta. Puedes eliminarla en cualquier momento desde la app (<strong>Ajustes → Eliminar cuenta</strong>), lo que borra de inmediato tu cuenta y todo lo vinculado a ella de nuestros servidores, o por correo como se explica en la <a href="delete-account-es">página de eliminación de cuenta</a>.</p>
+
+  <h2>8. Tus derechos</h2>
+  <p>Puedes pedirnos acceder a tus datos, corregirlos, eliminarlos, limitarlos o exportarlos, u oponerte a su uso, escribiendo a <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a>. Usamos tus datos para prestarte el servicio que pides, y para compartir con amigos nos basamos en tu decisión de compartir. Si estás en la Unión Europea también puedes reclamar ante tu autoridad de protección de datos; en España es la AEPD (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+  <h2>9. Menores</h2>
+  <p>Gracias no está pensada para menores de 14 años. Si crees que un menor de 14 años tiene una cuenta, avísanos y la eliminaremos.</p>
+
+  <h2>10. Cambios</h2>
+  <p>Si cambiamos esta política, actualizaremos la fecha de arriba.</p>
 
   <hr>
-  <footer>&copy; 2026 Gracias. Todos los derechos reservados.</footer>
+  <footer>&copy; 2026 mayonesso. Todos los derechos reservados. · <a href="terms-es">Términos de Servicio</a> · <a href="support-es">Soporte</a></footer>
 </body>
 </html>

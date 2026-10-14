@@ -15,36 +15,52 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: May 23, 2026</em></p>
+  <p><em>Last updated: October 14, 2026</em></p>
+
+  <p>Gracias is published by <strong>mayonesso</strong> (Spain), who is responsible for your data. Contact: <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a>.</p>
 
   <h2>1. What we collect and why</h2>
-  <p>Gracias collects only the data needed to provide a gratitude journaling and Circle-sharing experience:</p>
   <ul>
-    <li><strong>Email address</strong> — for magic-link authentication (via Supabase Auth).</li>
-    <li><strong>Nickname and avatar color</strong> — shown to you and your Circle friends.</li>
-    <li><strong>Gratitude entries</strong> — up to 3 text items per day, stored locally and optionally synced to Supabase if you sign in.</li>
-    <li><strong>Friend relationships</strong> — follower/following connections in your Circle.</li>
-    <li><strong>Likes</strong> — when you like a friend's entry on the Circle feed.</li>
-    <li><strong>Notification token</strong> — used only to send your scheduled daily reminder.</li>
+    <li><strong>Email address</strong> — to sign you in with a magic link. It is kept by our authentication provider (Supabase), and the sign-in email is delivered through Resend.</li>
+    <li><strong>Nickname and avatar color</strong> — shown to you and to your Circle friends.</li>
+    <li><strong>Gratitude entries</strong> — up to 3 short items a day. They are stored on your device. If you sign in, they are also stored on our servers (Supabase) so you can share them with your friends.</li>
+    <li><strong>Friend connections and likes</strong> — who is in your Circle and which entries you liked.</li>
+    <li><strong>Reports</strong> — if you report a friend's entry, we store who reported it, which entry, the reason and the date, only to review it.</li>
   </ul>
-  <p>We do <strong>not</strong> collect location data, browsing history, contacts, photos, or any analytics telemetry. No advertising SDKs are used.</p>
+  <p>We do <strong>not</strong> collect your location, contacts or photos, and there are no analytics, advertising or tracking tools in Gracias.</p>
 
-  <h2>2. How we store it</h2>
-  <p>Gratitude entries are stored locally on your device in SQLite. If you sign in with email, entries are also stored securely in <strong>Supabase</strong> (encrypted at rest, SOC 2 compliant infrastructure). Your email and authentication credentials are managed by Supabase Auth.</p>
+  <h2>2. Who else handles your data</h2>
+  <p><strong>Supabase</strong> hosts our database and sign-in. <strong>Resend</strong> delivers the sign-in email, so it sees your email address and the sign-in link. We never sell your data and we do not share it with anyone else.</p>
 
-  <h2>3. Sharing</h2>
-  <p>Your nickname, avatar color, and gratitude entries are shared only with the friends you manually add to your Circle. We <strong>never sell</strong> your data. No third party has access to your personal information except Supabase as our hosting infrastructure provider.</p>
+  <h2>3. What your friends see</h2>
+  <p>Your nickname, avatar color and entries are visible to the friends you add to your Circle. Entries are shared by default, and you can make any entry private so only you see it. Friends are added only by scanning a QR code, so both people agree. Either of you can remove the other at any time, and after that you no longer see each other's entries.</p>
 
-  <h2>4. Voice data</h2>
-  <p>Gracias offers optional voice input via the iOS Speech API. Audio is transcribed on-device and discarded immediately. <strong>Voice recordings are never transmitted or stored</strong> on our servers or anywhere else.</p>
+  <h2>4. Voice input</h2>
+  <p>Voice input is optional. Speech recognition runs <strong>on your device</strong>: the audio is not sent to us or to any server, and it is not stored. If your device or language does not support on-device recognition, voice input is simply not available and you can type instead.</p>
 
-  <h2>5. Data retention</h2>
-  <p>Your data is kept for as long as your account exists. When you delete your account (see section 6), all personal data is erased from Supabase within a reasonable timeframe. Local SQLite data on your device is deleted when you delete your account from within the app.</p>
+  <h2>5. Other device features</h2>
+  <ul>
+    <li><strong>Camera</strong> — only to scan a friend's QR code. Images are not stored or sent.</li>
+    <li><strong>Reminders</strong> — the daily reminder is a notification scheduled on your device. We do not store a push-notification token.</li>
+    <li><strong>Pausing other apps</strong> (optional) — the apps you choose and the moment you open one are handled on your device only, using Screen Time on iPhone and the Accessibility service on Android. On Android, Gracias uses the Accessibility service only to detect which app is in front. It does not read what is on your screen, and nothing about the apps you use is stored or sent anywhere.</li>
+  </ul>
 
-  <h2>6. Your rights</h2>
-  <p>You can delete your account at any time from the app: <strong>Settings → Delete Account</strong>. This removes your profile, entries, friendships, and likes from our servers. If you have trouble, email us at the address below.</p>
+  <h2>6. Reports and moderation</h2>
+  <p>You can report a friend's entry from your Circle feed. We review reports manually and may remove content or accounts that break the <a href="terms">Terms</a>. If either account is deleted, the related reports are deleted too.</p>
+
+  <h2>7. Keeping and deleting your data</h2>
+  <p>We keep your data while your account exists. You can delete your account at any time in the app (<strong>Settings → Delete Account</strong>), which immediately erases your account and everything linked to it from our servers, or by email as explained on the <a href="delete-account">account deletion page</a>.</p>
+
+  <h2>8. Your rights</h2>
+  <p>You can ask us to access, correct, delete, restrict or export your data, or object to how we use it, by writing to <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a>. We use your data to provide the service you asked for, and for sharing with friends we rely on your choice to share. If you are in the European Union you can also complain to your data protection authority; in Spain that is the AEPD (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+  <h2>9. Children</h2>
+  <p>Gracias is not meant for children under 14. If you believe a child under 14 has an account, tell us and we will delete it.</p>
+
+  <h2>10. Changes</h2>
+  <p>If we change this policy we will update the date above.</p>
 
   <hr>
-  <footer>&copy; 2026 Gracias. All rights reserved.</footer>
+  <footer>&copy; 2026 mayonesso. All rights reserved. · <a href="terms">Terms of Service</a> · <a href="support">Support</a></footer>
 </body>
 </html>
